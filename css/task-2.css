@@ -1,0 +1,10 @@
+.gallery {
+    max-width: 1440px;
+    padding: 100px 156px;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 48px;
+    margin: auto;
+}

@@ -1,0 +1,26 @@
+p {
+    margin: 0;
+}
+
+.widget {
+    max-width: 345px;
+    padding: 100px 88px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    margin: auto;
+}
+
+.change-color {
+    border-radius: 8px;
+    padding: 8px 16px;
+    max-width: 148px;
+    height: 40px;
+    background-color: #4e75ff;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
