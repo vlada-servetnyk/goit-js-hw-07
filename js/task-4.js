@@ -12,7 +12,8 @@ function handleSubmit(event) {
     const password = form.elements.password.value;
   
   if (email === "" || password === "") {
-    return alert("All form fields must be filled in");
+    alert("All form fields must be filled in");
+    return;
     };
 
   const key = [...form.querySelectorAll(".input-form")];

@@ -15,9 +15,25 @@ function handleClick(event) {
 }
 
 
+// function createBoxes(amount) {
+//   boxes.innerHTML = "";
+//   let myBox = [];
+//   let size = 30;
+//   for (let i = 0; i < amount; i++) {
+//     const elem = document.createElement("div");
+//     elem.style.width = `${size}px`;
+//     elem.style.height = `${size}px`;
+//     elem.style.backgroundColor = getRandomHexColor();
+//     size += 10;
+//     myBox.push(elem);
+//     boxes.append(...myBox);
+//     numInput.value = "";
+//   }
+// }
+
 function createBoxes(amount) {
   boxes.innerHTML = "";
-  let myBox = [];
+  let myNewBoxes = [];
   let size = 30;
   for (let i = 0; i < amount; i++) {
     const elem = document.createElement("div");
@@ -25,11 +41,12 @@ function createBoxes(amount) {
     elem.style.height = `${size}px`;
     elem.style.backgroundColor = getRandomHexColor();
     size += 10;
-    myBox.push(elem);
-    boxes.append(...myBox);
-    numInput.value = "";
+    myNewBoxes.push(elem);
   }
+    boxes.append(...myNewBoxes);
+    numInput.value = "";
 }
+
 
 
 function getRandomHexColor() {
